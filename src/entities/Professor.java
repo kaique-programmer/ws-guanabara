@@ -27,6 +27,6 @@ public class Professor extends People{
     }
 
     public void  receiveSalaryIncrease(double increaseSalary) {
-        this.salary = increaseSalary;
+        this.salary += increaseSalary;
     }
 }
