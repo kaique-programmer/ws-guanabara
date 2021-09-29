@@ -1,6 +1,6 @@
 package entities;
 
-public abstract class Student extends People{
+public class Student extends People{
     private String registration, course;
 
     public Student(String name, int age, char sex, String registration, String course) {
@@ -26,6 +26,6 @@ public abstract class Student extends People{
     }
 
     public void payMonthly() {
-
+        System.out.println("Payment monthly student: " + this.getName());
     }
 }

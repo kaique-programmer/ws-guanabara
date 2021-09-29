@@ -35,7 +35,16 @@ public abstract class People {
         this.sex = sex;
     }
 
-    public void toAnniversary() {
+    public final void toAnniversary() {
         this.age++;
+    }
+
+    @Override
+    public String toString() {
+        return "People{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                '}';
     }
 }

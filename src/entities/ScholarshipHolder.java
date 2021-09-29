@@ -16,7 +16,12 @@ public class ScholarshipHolder extends Student{
         this.scholarship = scholarship;
     }
 
-    public void payMonthly() {
+    public void renewScholarship() {
+        System.out.println("Renewing scholarship of " + this.getName());
+    }
 
+    @Override
+    public void payMonthly() {
+        System.out.println(this.getName() + ": scholarship holder! payment easy");
     }
 }

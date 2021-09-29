@@ -15,8 +15,4 @@ public class Technical extends Student {
     public void setProfessionalRegistration(int professionalRecord) {
         this.professionalRecord = professionalRecord;
     }
-
-    public void payMonthly() {
-
-    }
 }
