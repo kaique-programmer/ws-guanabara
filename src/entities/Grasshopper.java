@@ -29,4 +29,13 @@ public class Grasshopper extends People{
     public void sawMoreOne() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Grasshopper{" +
+                super.toString() +
+                "login='" + login + '\'' +
+                ", totalWatched=" + totalWatched +
+                '}';
+    }
 }

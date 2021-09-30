@@ -7,16 +7,16 @@ public class Video implements ActionVideo {
     private int feedback;
     private int views;
     private int likes;
-    private boolean recording;
+    private boolean reproducing;
 
     public Video() {}
 
-    public Video(String title, int feedback, int views, int likes, boolean recording) {
+    public Video(String title, int feedback, int views, int likes, boolean reproducing) {
         this.title = title;
         this.feedback = feedback;
         this.views = views;
         this.likes = likes;
-        this.recording = recording;
+        this.reproducing = reproducing;
     }
 
     public String getTitle() {
@@ -51,27 +51,27 @@ public class Video implements ActionVideo {
         this.likes = likes;
     }
 
-    public boolean isRecording() {
-        return recording;
+    public boolean isReproducing() {
+        return reproducing;
     }
 
-    public void setRecording(boolean recording) {
-        this.recording = recording;
+    public void setReproducing(boolean reproducing) {
+        this.reproducing = reproducing;
     }
 
     @Override
     public void play() {
-
+        this.reproducing = true;
     }
 
     @Override
     public void pause() {
-
+        this.reproducing = false;
     }
 
     @Override
     public void like() {
-
+        this.likes++;
     }
 
     @Override
@@ -81,7 +81,7 @@ public class Video implements ActionVideo {
                 ", feedback=" + feedback +
                 ", views=" + views +
                 ", likes=" + likes +
-                ", recording=" + recording +
+                ", reproducing=" + reproducing +
                 '}';
     }
 }
