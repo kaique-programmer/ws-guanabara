@@ -27,7 +27,7 @@ public class Grasshopper extends People{
     }
 
     public void sawMoreOne() {
-
+        this.totalWatched++;
     }
 
     @Override

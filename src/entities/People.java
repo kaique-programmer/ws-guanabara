@@ -47,12 +47,8 @@ public abstract class People {
         this.experience = experience;
     }
 
-    public final void toAnniversary() {
-        this.age++;
-    }
-
     public void winExperience() {
-
+        this.experience++;
     }
 
     @Override

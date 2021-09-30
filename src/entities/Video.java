@@ -31,8 +31,9 @@ public class Video implements ActionVideo {
         return feedback;
     }
 
-    public void setFeedback(int feedback) {
-        this.feedback = feedback;
+    public void setFeedback(double feedback) {
+        int newFeedback = (int) (this.feedback + feedback) / this.views;
+        this.feedback = newFeedback;
     }
 
     public int getViews() {
