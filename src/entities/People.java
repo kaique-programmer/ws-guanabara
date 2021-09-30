@@ -4,11 +4,13 @@ public abstract class People {
     private String name;
     private int age;
     private char sex;
+    private String experience;
 
-    public People(String name, int age, char sex) {
+    public People(String name, int age, char sex, String experience) {
         this.name = name;
         this.age = age;
         this.sex = sex;
+        this.experience = experience;
     }
 
     public String getName() {
@@ -35,8 +37,20 @@ public abstract class People {
         this.sex = sex;
     }
 
+    public String getExperience() {
+        return experience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+
     public final void toAnniversary() {
         this.age++;
+    }
+
+    public void winExperience() {
+
     }
 
     @Override
