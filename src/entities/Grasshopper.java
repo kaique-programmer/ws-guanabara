@@ -1,19 +1,20 @@
 package entities;
 
-public class Gafanhoto {
+public class Grasshopper extends People{
     private String login;
     private int totalWatched;
 
-    public Gafanhoto(String login, int totalWatched) {
+    public Grasshopper(String name, int age, char sex, int experience, String login, int totalWatched) {
+        super(name, age, sex, experience);
         this.login = login;
         this.totalWatched = totalWatched;
     }
 
-    public String getLogin() {
+    public String getLogo() {
         return login;
     }
 
-    public void setLogin(String login) {
+    public void setLogo(String login) {
         this.login = login;
     }
 

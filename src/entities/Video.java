@@ -9,6 +9,8 @@ public class Video implements ActionVideo {
     private int likes;
     private boolean recording;
 
+    public Video() {}
+
     public Video(String title, int feedback, int views, int likes, boolean recording) {
         this.title = title;
         this.feedback = feedback;
@@ -70,5 +72,16 @@ public class Video implements ActionVideo {
     @Override
     public void like() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "title='" + title + '\'' +
+                ", feedback=" + feedback +
+                ", views=" + views +
+                ", likes=" + likes +
+                ", recording=" + recording +
+                '}';
     }
 }
